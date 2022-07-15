@@ -439,7 +439,7 @@
 NexT.utils.loadComments(document.querySelector('#valine-comments'), () => {
   NexT.utils.getScript('//cdn.jsdelivr.net/npm/valine@1.5.0/dist/Valine.min.js', () => {
     var GUEST = ['nick', 'mail', 'link'];
-    var guest = 'nick,mail,link';
+    var guest = 'nick,mail';
     guest = guest.split(',').filter(item => {
       return GUEST.includes(item);
     });
@@ -450,14 +450,14 @@ NexT.utils.loadComments(document.querySelector('#valine-comments'), () => {
       appId      : 'msMKcGHLG4mNvp4kP0K0UdtD-gzGzoHsz',
       appKey     : 'pCX0HROLgaWYXd29lDt8KEoY',
       placeholder: "欢迎留言~~",
-      avatar     : 'mm',
+      avatar     : 'https://aliberter-bucket.oss-cn-beijing.aliyuncs.com/%E5%A4%B4%E5%83%8F.JPG',
       meta       : guest,
       pageSize   : '10' || 10,
       visitor    : false,
       lang       : 'zh-cn' || 'zh-cn',
       path       : location.pathname,
-      recordIP   : false,
-      serverURLs : ''
+      recordIP   : true,
+      serverURLs : 'blog.aliberter.cn'
     });
   }, window.Valine);
 });

@@ -349,6 +349,9 @@
         
 
         
+  <div class="beian"><a href="https://beian.miit.gov.cn/" rel="noopener" target="_blank">冀ICP备19031526号-1 </a>
+      <img src="/images/gongan.png" style="display: inline-block;">
+  </div>
 
 <div class="copyright">
   
@@ -442,7 +445,7 @@
 NexT.utils.loadComments(document.querySelector('#valine-comments'), () => {
   NexT.utils.getScript('//cdn.jsdelivr.net/npm/valine@1.5.0/dist/Valine.min.js', () => {
     var GUEST = ['nick', 'mail', 'link'];
-    var guest = 'nick,mail';
+    var guest = 'nick,mail,link';
     guest = guest.split(',').filter(item => {
       return GUEST.includes(item);
     });
@@ -453,14 +456,14 @@ NexT.utils.loadComments(document.querySelector('#valine-comments'), () => {
       appId      : 'msMKcGHLG4mNvp4kP0K0UdtD-gzGzoHsz',
       appKey     : 'pCX0HROLgaWYXd29lDt8KEoY',
       placeholder: "欢迎留言~~",
-      avatar     : 'https://aliberter-bucket.oss-cn-beijing.aliyuncs.com/%E5%A4%B4%E5%83%8F.JPG',
+      avatar     : 'retro',
       meta       : guest,
       pageSize   : '10' || 10,
       visitor    : false,
       lang       : 'zh-cn' || 'zh-cn',
       path       : location.pathname,
       recordIP   : true,
-      serverURLs : 'blog.aliberter.cn'
+      serverURLs : ''
     });
   }, window.Valine);
 });

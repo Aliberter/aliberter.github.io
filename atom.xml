@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-  <title>阿狸文斋</title>
+  <title>落叶听松</title>
   
   
   <link href="https://blog.aliberter.cn/atom.xml" rel="self"/>
@@ -10,7 +10,7 @@
   <id>https://blog.aliberter.cn/</id>
   
   <author>
-    <name>Aliberter</name>
+    <name>阿狸</name>
     
   </author>
   
